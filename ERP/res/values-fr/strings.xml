@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ERP de Montpellier</string>
+    <string name="action_search">Recherche</string>
+    <string name="drawer_open">Panel Ouvert</string>
+    <string name="drawer_close">Panel fermé</string>
+    
+    <string name="map">Carte</string>
+    <string name="categories">Categories</string>
+    <string name="favourites">Favoris</string>
+    <string name="about">À propos</string>
+    <string name="building">Bâtiment</string>
+    <string name="category_buildings">Bâtiments de la categorie</string>
+    <string name="search">Recherche</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>@string/map</item>
+        <item>@string/categories</item>
+        <item>@string/favourites</item>
+        <item>@string/about</item>
+        <item>@string/building</item>
+        <item>@string/category_buildings</item>
+        <item>@string/search</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_nav_map</item>
+        <item>@drawable/ic_nav_categories</item>
+        <item>@drawable/ic_nav_favorites</item>
+        <item>@drawable/ic_nav_about</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Icone</string>
+    <string name="building_image">Image du Bâtiment</string>
+    <string name="phone">TELEPHONE</string>
+    <string name="address">ADRESSE</string>
+    <string name="website">SITE WEB</string>
+    <string name="email">E-MAIL</string>
+    <string name="subcategory">SOUS CATEGORIE</string>
+    <string name="back">Retour</string>
+    <string name="datacity_image">Image Datacity</string>
+    <string name="empty_list">La liste de Bâtiment est vide.</string>
+    <string name="favourite_icon">Icone Favoris</string>
+    <string name="delete_button_content">-</string>
+    <string name="empty_string">---</string>
+    <string name="loading_markers">Chargement des marqueurs</string>
+    <string name="search_a_building">Rechercher un bâtiment</string>
+    <string name="error">Une erreur est survenue</string>
+    <string name="call_number">Voulez vous appeler ce numéro ?</string>
+    <string name="go_website">Voulez vous allez sur ce site web ?</string>
+    <string name="send_email">Voulez vous envoyer un e-mail cette adresse ?</string>
+    <string name="send_email_with">Envoyer un e-mail avec</string>
+    <string name="version">Version</string>
+    <string name="no_coordinates">Aucunes coordonnées pour ce bâtiment.</string>
+    
+
+</resources>

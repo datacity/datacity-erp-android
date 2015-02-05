@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_background" >
+
+    <TextView
+        android:id="@+id/building_title_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/building_imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/building_title_textView"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/building_image"
+        android:scaleType="fitXY" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomBar_relativeLayout"
+        android:layout_below="@id/building_title_textView" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/building_addressTitle_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/address"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blue_text" />
+
+                <TextView
+                    android:id="@+id/building_address_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/building_addressTitle_textView"
+                    android:layout_toRightOf="@id/building_addressTitle_textView"
+                    android:gravity="end"
+                    android:text="@string/empty_string"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/building_divider1"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/darker_gray" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/building_phoneTitle_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/phone"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blue_text" />
+
+                <TextView
+                    android:id="@+id/building_phone_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/building_phoneTitle_textView"
+                    android:layout_toRightOf="@id/building_phoneTitle_textView"
+                    android:gravity="end"
+                    android:text="@string/empty_string"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/building_divider2"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/darker_gray" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/building_websiteTitle_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/website"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blue_text" />
+
+                <TextView
+                    android:id="@+id/building_website_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/building_websiteTitle_textView"
+                    android:layout_toRightOf="@id/building_websiteTitle_textView"
+                    android:gravity="end"
+                    android:text="@string/empty_string"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/building_divider3"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/darker_gray" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/building_emailTitle_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/email"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blue_text" />
+
+                <TextView
+                    android:id="@+id/building_email_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/building_emailTitle_textView"
+                    android:layout_toRightOf="@id/building_emailTitle_textView"
+                    android:gravity="end"
+                    android:text="@string/empty_string"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/building_divider4"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@android:color/darker_gray" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/building_subCategoryTitle_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/subcategory"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/blue_text" />
+
+                <TextView
+                    android:id="@+id/building_subCategory_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@id/building_subCategoryTitle_textView"
+                    android:layout_toRightOf="@id/building_subCategoryTitle_textView"
+                    android:gravity="end"
+                    android:text="@string/empty_string"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottomBar_relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/building_map_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background"
+            android:text="@string/map"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/building_return_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_toEndOf="@id/building_map_button"
+            android:layout_toRightOf="@id/building_map_button"
+            android:background="@drawable/button_background"
+            android:text="@string/back"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/favouriteImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/favourite_icon" />
+    </RelativeLayout>
+
+</RelativeLayout>
